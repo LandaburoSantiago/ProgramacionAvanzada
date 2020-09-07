@@ -1,0 +1,61 @@
+<header class="ae-container-fluid ae-container-fluid--full rk-header ">
+    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+    <label for="mobile-menu">
+    <svg>
+        <use xlink:href="img/symbols.svg#bar"></use>
+    </svg>
+    <svg>
+        <use xlink:href="img/symbols.svg#bar"></use>
+    </svg>
+    <svg>
+        <use xlink:href="img/symbols.svg#bar"></use>
+    </svg>
+    </label>
+    <input type="hidden" name="posicion" id="posicion" value="{{posicion}}">
+    <div class="ae-container-fluid rk-topbar">
+    <h1 class="rk-logo"><a href="/">urku portfolio<sup>tm</sup></a></h1>
+    <nav class="rk-navigation">
+        <ul class="rk-menu">
+        <li id="item-home" class="rk-menu__item"><a id="link-home" href="/" class="rk-menu__link">Home</a>
+        </li>
+        <li id="item-portfolio" class="rk-menu__item"><a id="link-portfolio" href="/portfolio" class="rk-menu__link">Portfolio</a>
+            <nav class="rk-menu__sub">
+                <form class="form" method="POST" action="/portfolio">
+                    <ul class="rk-container">
+                        <li id="item-flex" class="rk-menu__item"><button name="flex" type="submit" value="flex" class="btn"><a class="rk-menu__link">Flex</a></button>
+                        </li>
+                        <li id="item-switch" class="rk-menu__item"><button name="switch" type="submit" value="switch" class="btn"><a class="rk-menu__link">Switch</a></button>
+                        </li>
+                        <li id="item-static" class="rk-menu__item"><button name="static" type="submit" value="static" class="btn"><a class="rk-menu__link">Static</a></button>
+                        </li>
+                        <li id="item-masonry" class="rk-menu__item"><button name="masonry" type="submit" value="masonry" class="btn"><a class="rk-menu__link">Masonry</a></button>
+                        </li>
+                    </ul>
+                </form>
+            </nav>
+        </li>
+        <li id="item-blog" class="rk-menu__item"><a id="link-blog" href="/blog" class="rk-menu__link">Blog</a>
+        </li>
+        <li id="item-pages" class="rk-menu__item"><a id="link-pages" href="#0" class="rk-menu__link">Pages</a>
+            <nav class="rk-menu__sub">
+            <ul class="rk-container">
+                <li id="item-about" class="rk-menu__item"><a href="/about" class="rk-menu__link">About</a></li>
+                <li id="item-documentation" class="rk-menu__item"><a href="/documentation" class="rk-menu__link">Documentation</a></li>
+                <li id="item-design" class="rk-menu__item"><a href="/design-style" class="rk-menu__link">Design Styles</a></li>
+            </ul>
+            </nav>
+        </li>
+        <li id="item-contact" class="rk-menu__item"><a id="link-contact" href="/contact" class="rk-menu__link">Contact Us</a>
+        </li>
+        </ul>
+        <form class="rk-search">
+        <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+        <label for="urku-search">
+            <svg>
+            <use xlink:href="img/symbols.svg#icon-search"></use>
+            </svg>
+        </label>
+        </form>
+    </nav>
+    </div>
+</header>
